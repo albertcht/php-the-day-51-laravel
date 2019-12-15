@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
+    public function analysis()
+    {
+        return [
+            'required_files' => count(get_included_files())
+        ];
+    }
+
     public function hello(Request $request)
     {
         return [

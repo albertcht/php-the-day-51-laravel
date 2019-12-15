@@ -16,3 +16,4 @@ use Illuminate\Http\Request;
 Route::get('/hello', 'HelloController@hello');
 Route::get('/sleep', 'HelloController@sleep');
 Route::get('/user', 'HelloController@user');
+Route::get('/analysis', 'HelloController@analysis');
